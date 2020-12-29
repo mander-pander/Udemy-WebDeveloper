@@ -1,0 +1,18 @@
+h1 {
+    color: indigo;
+}
+
+h2 {
+    color: teal;
+    background-color: darksalmon;
+}
+
+p {
+    color: antiquewhite;
+    background-color: grey;
+}
+
+button {
+    color: blueviolet;
+    background-color: powderblue;
+}
