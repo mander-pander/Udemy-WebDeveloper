@@ -1,0 +1,46 @@
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 25px;
+    background-color: #a8dadc;
+}
+
+/* id selector */
+
+#register {
+    background-color: #1d3557;
+    color: #f1faee
+}
+
+#login {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+#search {
+    font-size: 20px;
+}
+
+/* can select more than one with comma */
+
+h1,h2 {
+    color: #1d3557;
+}
+
+span {
+    color: #457b9d;
+}
+
+/*class selector*/
+
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 10px;
+}
