@@ -37,10 +37,39 @@ span {
     color: #457b9d;
 }
 
+/* descendent selector 
+would be more beneficial to give3 the sections a class.
+
+.post a {
+    color: 
+}
+*/
+
+span a {
+    color: #457b9d;
+}
+
+/*will turn all anchor descendants of footer red*/
+
+footer a {
+    color: red;
+}
+
 /*class selector*/
 
 .tag {
     background-color: #e63946;
     color: #f1faee;
     font-size: 10px;
+}
+
+/*selects what immediately proceeds*/
+h2 + button {
+    background-color: yellow;
+    font-size: 15px;
+}
+
+/*direct child - selects direct children as defined*/
+footer > a {
+    color: limegreen;
 }
