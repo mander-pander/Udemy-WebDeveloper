@@ -1,5 +1,6 @@
 h1 {
     color: indigo;
+    background-color: rgb(255,255,255);
 }
 
 h2 {
@@ -9,10 +10,14 @@ h2 {
 
 p {
     color: antiquewhite;
-    background-color: grey;
+    background-color: rgb(128, 128, 128);
 }
 
 button {
     color: blueviolet;
-    background-color: powderblue;
+    background-color: #5FCFFC;
+}
+
+body {
+    background-color: #000;
 }
