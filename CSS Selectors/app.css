@@ -18,10 +18,12 @@ button {
     color: #f1faee
 }
 
+/*
 #login {
     background-color: #1d3557;
     color: #f1faee;
 }
+*/
 
 #search {
     font-size: 20px;
@@ -39,11 +41,13 @@ span {
 
 /* descendent selector 
 would be more beneficial to give3 the sections a class.
+*/
 
 .post a {
-    color: 
+    color: #457b9d;
+    text-decoration: none;
+    font-weight: bold;
 }
-*/
 
 span a {
     color: #457b9d;
@@ -73,3 +77,84 @@ h2 + button {
 footer > a {
     color: limegreen;
 }
+
+/* attribute selector */
+
+input[type="password"] {
+    color:aquamarine;
+}
+
+/*same effect with section.post*/
+
+section[class="post"]{
+    background-color: lightpink;
+}
+
+a[href*="google"] {
+    color: purple;
+}
+
+/*pseudo classes need colon*/
+
+.post button:hover {
+    background-color: orange;
+    color: yellow;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+.post:nth-of-type(2n){
+    background-color: #ffc7cf;
+}
+
+/* pseudo elements allows you to select a particular part of selected elements */
+
+h2::first-letter {
+    font-size: 40px;
+}
+
+h2::selection {
+    background-color: #f1faee;
+}
+
+/* cascading styles - newest one wins
+This includes new stylesheets linked to html file */
+h1, h2 {
+    color: olive;
+}
+
+/*specificity is how the browser decides which rules to apply 
+when multiple rules could apply to the same element. It is a 
+measure of how specific a given selector is. The more specific
+selector wins. */
+
+/*this is generic, other more specific button styles will
+show instead, i.e. vote buttons are specific in posts*/
+
+button:hover {
+    background-color: olive;
+    font-size: 10px;
+}
+
+/* p {
+    color: yellow;
+} has element selector
+
+section p {
+    color: teal;
+} has element selector + element selector 
+
+measure of specificity:
+id > class > element
+*/
+
+/* button {
+    background-color: magenta !important;
+}*/
+/*!important overrides everything, avoid using*/

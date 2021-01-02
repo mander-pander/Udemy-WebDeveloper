@@ -1,0 +1,20 @@
+body {
+    color: purple;
+}
+
+/*if not other properties declared for elements in body,
+they will inherit the body color defined above*/
+
+section {
+    color: teal;
+}
+
+/*section is a closer parent than body for items within it*/
+
+form {
+    color: lightsalmon;
+}
+
+button, input {
+    color: inherit;
+}
