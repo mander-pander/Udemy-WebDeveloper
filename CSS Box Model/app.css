@@ -1,0 +1,33 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    width: 250px;
+    background-color: lightpink;
+}
+
+#one {
+    background-color: #e5989b;
+    border-width: 5px;
+    border-color: #6d6875;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+#two {
+    background-color: #b5838d;
+    border-color: #ffcdb2;
+    border-width: 4px;
+    border-style: dotted;
+    border-left-color: lightpink;
+}
+
+/* quicker shorthand way of setting border */
+
+#three {
+    background-color: #6d6875;
+    border: 3px groove #e5989b;
+    border-radius: 10% 5%;
+}
