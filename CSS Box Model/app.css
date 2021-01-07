@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 div {
     width: 200px;
     height: 200px;
@@ -6,14 +10,32 @@ div {
 h1 {
     width: 250px;
     background-color: lightpink;
+    padding-left: 100px;
+    padding-top: 100px;
+    margin: 0;
 }
+
+span {
+    margin-left: 100px;
+}
+
+/*padding top, right, bottom and left or shorthand options.
+All four sides: padding 10px;
+vertical|horizontal: padding 5px 10px;
+top|horizontal|bottom: padding 1px 2px 2px;
+top|right|bottom|left: padding 5px 1px 0 2px;
+Margin is same way.
+*/
 
 #one {
     background-color: #e5989b;
     border-width: 5px;
     border-color: #6d6875;
     border-style: solid;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    padding-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
 
 #two {
@@ -22,6 +44,8 @@ h1 {
     border-width: 4px;
     border-style: dotted;
     border-left-color: lightpink;
+    margin: 200px;
+
 }
 
 /* quicker shorthand way of setting border */
@@ -30,4 +54,10 @@ h1 {
     background-color: #6d6875;
     border: 3px groove #e5989b;
     border-radius: 10% 5%;
+    padding: 10px 5px 0px 15px;
+    
+}
+
+button {
+    padding: 10px 20px;
 }
