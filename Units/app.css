@@ -1,0 +1,87 @@
+/* Percentages are always relative to some other value.
+Width: 50% - half the width of the parent.
+Line-height: 50% - half the font-size of the element itself */
+html {
+    font-size: 10px;
+}
+
+#percentages {
+    background-color: #f0e6ef;
+    width: 800px;
+    height: 800px;
+}
+
+#percentages div {
+    background-color: #b8bedd;
+    width: 50%;
+    height: 50%;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200px; /*should be 80px */
+}
+
+/*em's are relative units. 
+With font-size, 1em equals the font-size of the parent.
+2em's is twice the font-size of the element parent.
+
+With other properties, 1em is equal to the computed font-size
+of the element itself.
+*/
+
+#ems h2 {
+    font-size: 5em;
+    margin-left: 1em;
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+#ems p {
+    font-size: 1em;
+}
+
+#ems {
+    font-size: 15px;
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: .5em;
+    background-color: #9c89b8;
+    color: white;
+}
+/*nested items get font-size from parent
+ul {
+    font-size: 1.5em;
+}
+*/
+
+/*Enter REM.
+Root ems - relative to the root html element's
+font-size. Often easier to work with.
+
+If the root font-size is 20px, 1 rem is always
+20px, 2rem is always 40px, etc. */
+
+
+
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul{
+    font-size: 1.5rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}
