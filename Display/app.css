@@ -1,0 +1,28 @@
+h1 {
+    background-color: #e8d6cb;
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+    padding: 50px;
+    margin: 100px;
+}
+/*if element has inline, width and height ignored; not the case with block element(h1 above)*/
+span {
+    background-color: turquoise;
+    border: 1px solid black;
+    width: 500px;    
+    padding: 50px;
+    margin: 50px;
+}
+/*inline-block allows height, width and padding*/
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: #b58db6;
+    border: 5px solid black;
+    display: inline-block;
+    margin: 40px;
+}
+
+/*elements can be quickly hidden with display: none*/
