@@ -1,0 +1,53 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #8ecae6;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: #ffb703;
+}
+
+/*static is default*/
+
+#static #middle {
+    position: static;
+    
+}
+
+/*Relative keeps element positioned according to flow of 
+document and can be offset relative to itself with top,
+left, right, bottom*/
+
+#relative #middle {
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+/* Absolute removes element from the document flow with no space 
+created for element in page layout. Position is relative to its 
+closest positioned ancestor, otherwise positioned relative to initial
+containing block. */
+
+#absolute {
+    position: relative;
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+
+}
+
+/*fixed will scroll with the page*/
+
+#fixed #middle {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
