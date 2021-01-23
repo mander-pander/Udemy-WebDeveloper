@@ -51,3 +51,44 @@ let tvShow = "catdog";
 tvShow.indexOf("cat"); // 0
 tvShow.indexOf("dog"); // 3
 tvShow.indexOf("z"); // -1 (not found)
+
+let phrase = "haha that is so funny!";
+phrase.slice(5); //"that is so funny!"
+//phrase still full sentence as originally declared
+phrase.slice(5, 9); //"that"; second number is up to but not including
+
+phrase.replace('haha', 'teehee'); //only replaces first instance
+//"teehee that is so funny!"
+
+"lol".repeat(4); //lollollollol
+
+//Literals
+
+let product = 'Artichoke';
+let price = 2.25;
+let qty = 5;
+"You bought " + qty + " " + product + ". Total is: " + price * qty
+//You bought 5 Artichoke. Total is: 11.25
+//There's a better way!
+
+`You bought ${qty} ${product}. Total is: $${price*qty}`
+
+//Null = "Intentional absence of any value". Must be assigned.
+//Undefined = Variables that do not have an assigned value are undefined.
+
+//No one is logged in yet:
+let loggedInUser = null; //value is explicitly nothing
+//A user logs in:
+loggedInUser = 'George Washington';
+
+//Math is an object with nested methods
+Math.floor(23.90); //chops off decimal = 23
+Math.ceil(34.1); //rounds up = 35
+
+//Math.random gives random number between 0 and 1
+Math.random() * 5 //gives number between 1 and 5
+Math.floor(Math.random() * 5) //number between 0 and 4
+Math.floor(Math.random() *5) + 1//number between 1 and 5
+
+
+
