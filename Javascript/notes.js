@@ -90,5 +90,45 @@ Math.random() * 5 //gives number between 1 and 5
 Math.floor(Math.random() * 5) //number between 0 and 4
 Math.floor(Math.random() *5) + 1//number between 1 and 5
 
+//Comparison operators return boolean
+1>3 = false;
+1<3 = true;
+
+-1 <= -1 = true;
+
+-1 <= 10 = true;
+
+let age = 23;
+age >= 18; //true
+//you can also compare strings but be careful
+
+//Equality comparisons
+
+//== checks for equality of value but not equality of type;
+//coerces both values to the same type and then compares them
+
+1 == 1; //true
+1 == '1'; //true
+0 == ''; //true
+null == undefined; //true
+
+//=== cares about type and value, no coercion
+
+1 === '1'; //false
+0 === false; //false
+
+//!= not equal to; !== strict not equal
+1 != 2; //true
+1 != '1'; //false
+1 !== '1'; //true
+
+//console.log
+//console.warn = gives warning sign and color
+//console.error = gives error sign and color
+
+//alert causes a popup; alert("Hi!");
+//prompt pops up and asks for something; prompt("please enter a number");
+
+//parseInt will convert string to number if applicable
 
 
