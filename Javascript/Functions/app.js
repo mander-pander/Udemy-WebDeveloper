@@ -47,3 +47,15 @@ function repeat(str, numTimes) {
     }
     console.log(result);
 }
+
+//Built-in methods return values when we call them. Those values can be stored
+//The return statement ends function execution and specifies the value to be
+//returned by that function 
+
+function add(x,y) {
+    if(typeof x !== 'number' || typeof y !== 'number') {
+        return false;
+    }
+    return x + y;
+    console.log("End of function!");//this will never print.
+}
