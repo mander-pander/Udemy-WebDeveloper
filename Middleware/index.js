@@ -14,6 +14,19 @@ app.use((req, res, next) => {
     next();
 })
 
+app.use('/dogs', (req, res, next) => {
+    console.log("I love dogs!")
+    next();
+})
+
+const verifyPassword = (req, res, next) => {
+    const { password } = req.query;
+    if(password === 'fries'){
+        next();
+    }
+    res.send('Wrong answer. Please provide password.')
+}
+
 // app.use((req, res, next) => {
 //     console.log("This is my first middleware!")
 //     return next();
@@ -37,6 +50,14 @@ app.get('/', (req, res) => {
 app.get('/dogs', (req, res) => {
     console.log(`Request Date: ${req.requestTime}`)
     res.send('Bark bark')
+})
+
+app.get('/secret', verifyPassword, (req, res) => {
+    res.send('My secret: I quickly duck behind different aisles to avoid talking to people I know in grocery stores.')
+})
+
+app.use((req, res) => {
+    res.status(404).send('Not Found');
 })
 
 app.listen(3000, () => {
